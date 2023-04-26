@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+:root {
+    --primario: #62C7FF;
+    --secundario: #522FA5;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(to right, #5bb8f154, #2d63d86d, #3047a575);
+}
+
+.circulo {
+    display: flex;
+    margin: 2em 0 2em 2em;
+}
+
+#circuloR {
+    border-radius: 100px 0px 100px 0px;
+}
+
+#circuloL {
+    border-radius: 0px 100px 0px 100px;
+}
+
+.circulo1 {
+    background-color: black;
+    background-image: linear-gradient(#62C7FF, #522FA5);
+    width: 25px;
+    height: 25px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    text-align: center;
+}
+
+header{
+    display: flex;
+}
+
+#spanH1{
+    color: var(--primario);
+}
+
+main{
+    text-align: center;
+    padding: 1em 1em;
+}
+
+select, input{
+    background-color: #ffffff42;
+    height: 3em;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0.5em 0 1.5em 0;
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#buttonConverter{
+    width: 50%;
+    height: 3em;
+    left: 79.47px;
+    top: 244.54px;
+    background: linear-gradient(93.76deg, #2D63D8 -54.35%, #3048A5 73.12%);
+    border-radius: 7.64175px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+#fundo{
+    height: 20em;
+}
+
+#primeiraDiv, #segundaDiv{
+    background: #202020;
+    border: 2.54725px solid rgba(95, 164, 234, 0.55);
+    border-radius: 20.378px;
+    height: 10em;
+    padding-top: 1.25em;
+}
+
+h4{
+    color: var(--primario);
+    margin-top: 1em;
+}
+
+#seta{
+    margin: 0.5em 0;
+}
+
+option{
+    background-color: #20202081;
+    color: #000000;
+    font-weight: 700;
+}
+#sectionImg{
+    display: none;
+}
+@media (min-width: 935px) {
+    #sectionImg{
+        display: inline-block;  
+    }
+
+    #fundo{
+        height: 20em;
+    }
+    
+    select, input{
+        width: 30em;
+    }
+
+    #buttonConverter{
+        width: 20em;
+    }
+
+    #divSelect{
+        display: inline-block;
+        margin-right: 10em; 
+    }
+
+    #primeiraDiv, #segundaDiv{
+        display: inline-block;
+        width: 20em;
+        margin-top: 5em;
+    }
+
+    #seta{
+        margin: 0 5em;
+        margin-bottom: 1em;
+        transform: rotate(270deg);
+        transform-origin: center center 0;
+    }
+    h1{
+        margin-top: 1em;
+    }
+}

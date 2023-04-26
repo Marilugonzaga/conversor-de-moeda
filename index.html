@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de moeda</title>
+</head>
+
+<body>
+    <header>
+        <div class="circulo">
+            <div class="circulo1" id="circuloL"></div>
+            <div class="circulo1" id="circuloR"></div>
+        </div>
+        <h1>Conversor de moeda <span id="spanH1">DEV CLUB</span></h1>
+    </header>
+
+    <main>
+        <div id="divSelect">
+            <label for="">
+                Converter de
+                <select id="de">
+                    <option value="brasil">R$ Real Brasileiro</option>
+                </select>
+            </label>
+            <label for="">
+                Converter para
+                <select id="para">
+                    <option value="dolar">$ Dólar Americano</option>
+                    <option value="euro">Euro €</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+            </label>
+            <label for="">
+                Valor
+                <input type="text" id="inputIn" placeholder="R$ 200,00">
+            </label>
+            <button id="buttonConverter">Converter</button>
+        </div>
+        <section id="sectionImg">
+            <img src="./assets/fundo.svg" alt="" id="fundo">
+        </section>
+        <section>
+            <div id="primeiraDiv">
+                <img src="./assets/brasil.svg" alt="bandeira">
+                <p>R$ Real Brasileiro</p>
+                <h4 id="valorIn">R$ 2000,00</h4>
+            </div>
+            <img src="./assets/Vector.png" alt="seta" id="seta">
+            <div id="segundaDiv">
+                <img src="./assets/estados-unidos.svg" alt="bandeira" id="imgBandeira">
+                <p id="pOut">$ Dólar Americano</p>
+                <h4 id="valorOut">$ 395.68</h4>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
