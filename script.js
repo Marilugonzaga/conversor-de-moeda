@@ -1,11 +1,7 @@
 const button = document.getElementById('buttonConverter')
 const para = document.getElementById('para') //pegar o select
 
-const dolar = 0.20
-const euro = 0.18
-const bitcoin = 0.00000719
-
-const funcao = () =>{
+const converterValores = async () =>{
 
     const inputIn = document.getElementById('inputIn').value //valor digitado no input
     
@@ -18,6 +14,12 @@ const funcao = () =>{
     const img = document.getElementById('imgBandeira') //imagem da bandeira que vai alterar
 
     const pOut = document.getElementById('pOut')
+
+    const data = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL').then(response => response.json())
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    const bitcoin = data.BTCBRL.high
 
     if (para.value === `dolar`) {
         valorOut.innerHTML =  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(inputIn * dolar)
